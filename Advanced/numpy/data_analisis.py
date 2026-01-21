@@ -83,12 +83,9 @@ for athlete in athletes:
     grades.append(athlete_grade)
     print(athlete_grade)
 
-athletes_standarice = []
-
 min = np.max(athletes)
 max = np.min(athletes)
 
 for athlete in athletes:
-    athletes_standarice.append((athletes_standarice-min)/(max-min))
-
-print(athletes_standarice)
+    print((athlete-min)/(max-min))
+    # athletes_standarice.append((athletes_standarice-min)/(max-min))
